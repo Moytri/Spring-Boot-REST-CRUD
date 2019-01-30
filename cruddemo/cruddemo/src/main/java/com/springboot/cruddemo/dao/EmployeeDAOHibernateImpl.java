@@ -63,6 +63,7 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 		// get the current hibernate session
 		Session currentSession = entityManager.unwrap(Session.class);
 		
+		System.out.println(theEmployee);
 		//save employee
 		currentSession.saveOrUpdate(theEmployee);
 	}
