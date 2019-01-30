@@ -28,7 +28,6 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 	}
 	
 	@Override
-	@Transactional
 	public List<Employee> findAll() {
 
 		//get the current hibernate session
